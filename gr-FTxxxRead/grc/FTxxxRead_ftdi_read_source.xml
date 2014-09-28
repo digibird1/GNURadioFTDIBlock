@@ -1,0 +1,29 @@
+<block>
+  <name>Ftdi read source</name>
+  <key>FTxxxRead_ftdi_read_source</key>
+  <category>FTXXXREAD</category>
+  <import>import FTxxxRead</import>
+  <make>FTxxxRead.ftdi_read_source($VendorID, $ProductID, $BufferLength)</make>
+  <param>
+    <name>Vendorid</name>
+    <key>VendorID</key>
+    <value>0x0403</value>
+    <type>hex</type>
+  </param>
+  <param>
+    <name>Productid</name>
+    <key>ProductID</key>
+    <value>0x6014</value>
+    <type>hex</type>
+  </param>
+  <param>
+    <name>Bufferlength</name>
+    <key>BufferLength</key>
+    <value>52428800</value>
+    <type>raw</type>
+  </param>
+  <source>
+    <name>out</name>
+    <type>byte</type>
+  </source>
+</block>
